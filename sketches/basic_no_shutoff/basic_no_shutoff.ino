@@ -18,7 +18,6 @@ float readTemperature() {
 }
 
 void printTemperature(float value) {
-  Serial.print(value, 1);  // 
-  Serial.print(" \xC2\xB0");  // degree symbol
-  Serial.println("C");
+  // it is implied that the value is °C
+  Serial.print(value, 1);
 }
